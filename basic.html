@@ -4,7 +4,7 @@
         <title>basic html</title>        
     </head>
     <body style="background-color: powderblue;">
-        <div style="background-color: tomato; color: yellowgreen; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <div style="background-color: tomato; color: yellowgreen; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;">
             <h1>this is heading 1</h1>
             <h2>this is heading 2</h2>
             <h3>this is heading 3</h3>  
@@ -21,7 +21,7 @@
 
         <a href="https://www.w3schools.com" width="500" height="500">This is a link</a>
 
-        <div>
+        <div title="images">
             <p>
                 this is a picture
 
@@ -33,7 +33,7 @@
             <p>This is a <br> paragraph with a line break.</p>
         </div>
 
-        <div>
+        <div title="preformatted text">
             <p>            
                 this
                 is 
@@ -46,6 +46,61 @@
                     preformatted    text
                 in a pre element
             </pre>
+        </div>
+
+        <hr>
+
+        <div title="formatting elements">
+            <p><b>this text is bold</b></p>
+            <p><strong>this text is strong</strong></p>
+            <p><i>this is italic text</i></p>
+            <p><em>this is emphasized text</em></p>
+            <p><mark>this is marked text</mark></p>
+            <p><small>this is small text</small></p>
+            <p><del>this is deleted text</del></p>
+            <p><ins>this is inserted text</ins></p>
+            <p><sub>this is subscript text</sub></p>
+            <p><sup>this is superscript text</sup></p>
+        </div>
+
+        <hr>
+
+
+        <div title="text quotations" style="border: 2px solid seagreen;">
+            <p>this is a blockquote:</p>
+            <blockquote cite="https://shmeeload.xyz/home">
+                i am in a block quote with a citation
+            </blockquote>
+
+            <p><q>this line is quoated in a paragraph</q></p>
+
+            <p>this is an abbreviation: <abbr title = "Hypertext Markup Language">HTML</abbr></p>
+
+            <p>
+                <address>
+                    My Phone: (XXX)-XXX-XXXX<br>
+                    Visit Us At: <a href="https://shmeeload.xyz/home">shmeeload.xyz</a>
+                </address>
+            </p>
+
+            <!-- citations are useful for browsers and are rendered in italics -->
+            <p>this text cites the movie <cite>Inland Empire</cite> by David Lynch</p>
+
+            <!-- bi-directional override will override text direction -->
+            <p><bdo dir="rtl">this text will be written from right to left</bdo></p>
+        </div>
+
+        <hr>
+
+        <div title="CSS colors">
+            <!--RGB = RED GREEN BLUE-->
+            <h1 style="background-color: rgb(255,99,71);">using rgb()</h1>
+            <!-- HEX is form #(RED)(GREEN)(BLUE)-->
+            <h1 style="background-color: #ff6347;">using hex codes</h1>
+            <!-- HSL = HUE SATURATION LIGHTNESS-->
+            <h1 style="background-color: hsl(9, 100%, 64%);">using hsl()</h1>
+            <h1 style="background-color: rgba(255, 99, 71, 0.5);">using rgba()</h1>
+            <h1 style="background-color: hsla(9, 100%, 64%, 0.5);">using hsla()</h1>
         </div>
 
     </body>
