@@ -94,3 +94,24 @@ li a:hover {
     background-color: #111111;
 }
 
+/*
+class attributes are used to point to a class name in a style sheet (here)
+JS can allso access and manipulate elements by classname
+*/
+
+.demoClass {
+    background-color: bisque;
+    color: orangered;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.demoClass2 p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#demoID {
+    font-family: cursive;
+    color:darkmagenta;
+}

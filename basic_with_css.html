@@ -3,7 +3,28 @@
     <head>
         <title>basic html</title>        
         <link rel="stylesheet" href="basic.css">
+        <!-- <meta> tags provide metadate to a browser-->
+        <!-- typical meta info is shown below -->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="my web design playground">
+        <meta name="author" content="Cozart Shmoopler">
+        <!-- viewport is one of the most important metadata you can set
+            width=device-width scales the width of the page to follow the screen width of the device
+            initial-scale=1.0 sets the intial zoom level when the browser loads the page
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
+    <script src="basic.js">
+        document.getElementById("demoJS").style.fontSize = "red"
+    </script>
+    <!--
+        use noscript to provide alternative content when scripts are not enabled
+    -->
+    <noscript>
+        Sorry, your browser does not support JavaScript!
+    </noscript>
     <body>
         <a href="#page_bottom" id = "page_top">Jump to End of Page</a>
 
@@ -195,9 +216,49 @@
             </div>
         </div>
 
+        <!-- 
+            The <div> element is one of the CORE components in HTML docs
+            it is a BLOCK LEVEL element, usually where styling can be
+            put inside of it
 
+            you can style all blocks inside of a div for unfified STYLING
+        -->
+
+        <div class="demoClass demoClass2">
+            <p>I am part of this demo block</p>
+            <p>I am getting my css attributes from the <q>.demoClass</q> and <q>.demoClass2</q> classes</p>
+
+            <p id ="demoID">I am part of the demo block, but i also get formatting from my ID</p>
+        </div>
+
+        <!-- 
+            The <span> element is one of the CORE components in HTML docs
+            it is an INLINE container, so it is inside of another container 
+            generally
+        -->
+
+        <!-- 
+            we have two core ways to identify things in HTML: ID and CLASS
+                id is a unique identifier
+                while class is not
+            
+            in CSS, we can refer to classes with the .CLASSNAME {} syntax
+                    we can refer to ids with the #ID {} syntax
+        -->
+
+        <!--
+            <iframe is for displaying a webpage within a webpage
+        -->
+        <div title="google iframe" class="demoClass">
+            <iframe src="https://google.com" style="height:200px;width:300px;border:none"></iframe>
+        </div>
+
+        <div id="demoJS">
+            <p>This div gets its style from a JS getElementByID() call</p>
+        </div>
 
         <a href="#page_top" id = "page_bottom">Jump to Beginning of Page</a>
+
 
     </body>
 </html>
