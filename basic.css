@@ -15,6 +15,10 @@ p {
     margin: 50px;
 }
 
+table {
+    width: 100%;
+}
+
 a:link {
     color: greenyellow;
     background-color: transparent;
@@ -38,3 +42,4 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
+
