@@ -3,16 +3,16 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace; 
+    background-color: #f6f7f8;
 }
 
 /* style for the header */
 header {
-    background-color: #666;
+    background-color: rgb(203, 224, 231);
     padding: 30px;
     text-align: center;
     font-size: 35px;
-    color: white;
 }
 
 /*
@@ -21,9 +21,10 @@ header {
 nav {
     float: left;
     width: 10%;
-    height: 300px; /* TODO REMOVE */
-    background: #ccc;
+    height: 5000px; /* TODO REMOVE */
+    background: rgb(203, 224, 231);
     padding: 20px;
+    text-align: center;
 }
 
 /*
@@ -32,14 +33,17 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
+
 }
 
 article {
-    float: left;
+    float: right;
+    text-align: center;
     padding: 20px;
     width: 90%;
-    background-color: #f1f1f1;
-    height: 300px; /* TODO REMOVE */
+    background-color: rgb(203, 224, 231);
+    height: 5000px; /* TODO REMOVE */
 }
 
 /* clear floats after the columns */
@@ -54,7 +58,6 @@ footer {
     background-color: #777;
     padding: 10px;
     text-align: center;
-    color: white;
 }
 
 /* 
@@ -66,4 +69,28 @@ footer {
         width: 100%;
         height: auto;
     }
+}
+
+a:link {
+    color: rgb(255, 208, 56);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(228, 54, 83);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(247, 0, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
 }
